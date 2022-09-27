@@ -1,305 +1,373 @@
-
 <!-- Los comentarios a lo largo del codigo son muy importantes nos ayudan  -->
+<!-- MANUEL RICARDO CASTELLANOS-->
 
 <!DOCTYPE html>
 <html>
-<head>
-<title>Loki</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
-body {font-family: "Open Sans"}
-</style>
-</head>
+  <head>
+    <title>MetroidLand</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      h1,h2,h3,h4,h5,h6 {font-family: "Open Sans"}
+      body {font-family: "Open Sans"}
+    </style>
+  </head>
 
-<body class="w3-light-grey">
+  <body class="w3-white">
 
-<!-- Navigation bar with social media icons --> 
-
-
-<div class="w3-bar w3-black w3-hide-small">
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
-</div>
-  
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1600px">
-
-  <!-- Header -->
-  <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1 class="w3-xxxlarge"><b>LOKI </b></h1>
-    <h6>Bienvenidos a <span class="w3-tag">Ragnarok</span></h6>
-  </header>
-
-  <!-- Image header -->
-  <header class="w3-display-container w3-wide" id="home">
-    <img class="w3-image" src="img/bannerloki.jpg" alt="Fashion Blog" width="1600" height="1060">
-    <div class="w3-display-left w3-padding-large">
-      <h1 class="w3-text-white">Y</h1>
-      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>¿El Reino de los los perritos</b></h1>
-      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">INCRESAR</button></h6>
+    <!-- Barra de navegación con iconos de redes sociales --> 
+    <div class="w3-bar w3-indigo w3-hide-small">
+      <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-facebook-official"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-instagram"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-snapchat"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-flickr"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-linkedin"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
     </div>
-  </header>
+      
+    <!-- Inicio w3-content, el cual define un contenedor para un contenido fijo centrado,
+    y está evuelto en la pagina completa, excepto en el footer para este ejemplo -->
+    <div class="w3-content" style="max-width:1400px">
 
-  <!-- Grid -->
-  <div class="w3-row w3-padding w3-border">
+      <!-- Header -->
+      <header class="w3-container w3-center w3-padding-48 w3-light-blue">
+        <h1 class="w3-xxxlarge w3-text-red"><b>METROID LAND</b></h1>
+        <h6 class="w3-xlarge">El lugar con la mejor información sobre Samus Aran y Metroid<span style="color:palevioletred"> y a veces de otros videojuegos XD</span></h6>
+      </header>
 
-    <!-- Blog entries -->
-    <div class="w3-col l8 s12">
-    
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>Dios de las payasadas</h3>
-          <h5>Su verdadero amor es jugarle bromas a los perritos de calle
-              <span class="w3-opacity">JE JE JE</span>
-          </h5>
+      <!-- Image header -->
+      <header class="w3-display-container w3-wide" id="home">
+        <img class="w3-image" src="img/portada01.jpg" alt="Imagen de Metroid" width="1600" height="1060">
+        <div class="w3-display-center w3-padding-small">
+          <h1 class="w3-jumbo w3-text-white w3-hide-small"><b></b></h1>
+          <h6><button class="w3-button w3-cyan  w3-large w3-opacity w3-hover-opacity-off w3-center" onclick="document.getElementById('subscribe').style.display='block'">SUSCRÍBETE</button></h6>
         </div>
+      </header>
 
-        <div class="w3-justify">
-          <img src="/img/MLR_Hela.webp" alt="Girl Hat" style="width:100%" class="w3-padding-16">
-          <p><strong> Loki es un poderoso Dios nórdico!</strong>Que fue juzgado por Odín por cometer un pecado en Asgard (Reino de los Dioses) y debido a ello fue desterrado a Midgard (la Tierra) con la forma física de un niño de casi 9 años. Para poder volver al Mundo de los Dioses, Loki captura espíritus con esencia maligna, los cuales le devolverán su poder y así podrá regresar a Asgard.
+      <!-- Grid -->
+      <div class="w3-row w3-padding w3-border">
 
-            En la Tierra, Loki funda una Agencia de Detectives (Agencia de Detectives Enjaku) la cual se dedica a resolver misterios. El primer cliente de dicha agencia es una adolescente llamada Mayura Daidōji, quien está profundamente interesada en los fenómenos paranormales y en los misterios. Esto la condujo a encontrarse con una muñeca poseída, que hablaba sola, sin ningún tipo de cuerda, y que confundió a Mayura con su antigua dueña, quien había muerto en un incendio. La muñeca desaparece y por eso Mayura busca a la Agencia de Detectives, quedando muy impresionada cuando observa que el investigador es sólo un niño. Luego de resolver el caso de la muñeca, Mayura decide trabajar en la agencia y está segura de que si se queda "le pasarán muchas cosas misteriosas".
-            
-            Conforme avanza la historia, Odín envía a diferentes dioses para poder asesinar a Loki y al fin deshacerse de él, con lo cual le causa varias desventuras y problemas al Dios desterrado en su lucha por volver a Asgard..</p>
-          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
-          <p class="w3-clear"></p>
-          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
-            <hr>
-              <div class="w3-col l2 m3">
-                <img src="img/MLR_Freya.webp" style="width:90px;">
+        <!-- Blog entries -->
+        <div class="w3-col l8 s12">
+        
+          <!-- Blog entry -->
+          <div class="w3-container w3-pale-blue w3-margin w3-padding-large">
+            <div class="w3-center">
+              <h3>Metroid</h3>
+              <h5>Es una serie de videojuegos de acción-aventura, cuya idea fue concebida por Makoto Kano y el artista Hiroji Kiyotake a principios de la década de 1980<span class="w3-opacity"></span></h5>
+            </div>
+
+            <div class="w3-justify">
+              <p style="text-align:center;"><img src="img/metroid-juego.jpg" aling="center"  alt="Metroid: organismo similar a una medusa" style="width:40%" class="w3-padding-16"></p>
+              <p>La serie de juegos de <strong> Metroid</strong>, narra las aventuras de la cazarrecompensas Samus Aran, quién trata de proteger la galaxia de los piratas espaciales y el tráfico de de las critauras llamadas <i>Metroid</i>.</p>
+              <p>Dichos <i>Metroids</i> son una raza de organismos depredadores que tienen la capacidad de obtener energía de diversos seres vivos.</p>
+              <p>Los piratas espaciales son una raza interestelar malvada originaría del Planeta Pirata. Han ido conquistando planetas, atacando y asesinando a quienes los combatieran.</p>
+              <p>Al descubrir el planeta <strong>SR388</strong> y la especie de los Metroids, depredadores similares a medusas capaces de absorber la energía de otros seres vivos hasta causarles la muerte, su éxito fue enorme a la hora de conquistar más planetas.</p>
+              <p>Los piratas se apoderaron de los Metroids y los han usado como soldados y han usado su energía para lograr sus propósitos. La Federación Galáctica decidió un cuerpo de policia para combatir a los Piratas Espaciales.</p>
+              <p>Samus Aran es una mujer de la raza humana que quedó huérfana a temprana edad, al crecer se una a la Policia de la Federación Galáctica, para combatir a los Piratas Espaciales.</p>
+              <p class="w3-center"><button class="w3-button w3-green w3-border-black" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like!</b></button></p>
+              <p class="w3-left"><button class="w3-button w3-blue w3-border-black" onclick="myFunction('demo1')" id="myBtn"><b>Comentarios  </b> <span class="w3-tag w3-white">1</span></button></p>
+              <p class="w3-clear"></p>
+
+              <div class="w3-row w3-margin" id="demo1" style="display:none">
+                <hr>
+                  <div class="w3-col l2 m3">
+                    <img src="img/COMzelda01.jpg" style="width:60px;">
+                  </div>
+                  <div class="w3-col l10 m9">
+                    <h4>Link <span class="w3-opacity w3-medium">September 24, 2022, 18:02</span></h4>
+                    <p>Mi videojuego favorito del mundo mundial. ¡LO AMO!</p>
+                  </div>
               </div>
-              <div class="w3-col l10 m9">
-                <h4>Freya <span class="w3-opacity w3-medium">May 3, 2006, 6:32 PM</span></h4>
-                <p>Mi Dios norico favorito es Loki </p>
-              </div>
+            </div>
           </div>
+          <hr>
+          <!-- Blog entry -->
+          <div class="w3-container w3-pale-blue w3-margin w3-padding-large">
+            <div class="w3-center">
+              <h3>Samus Aran</h3>
+              <h5>La mejor cazarrecompensas de la Federación Galáctica<span class="w3-opacity"></span></h5>
+            </div>
+
+            <div class="w3-justify">
+              <p style="text-align: center;"><img src="img/samusaran01.jpg" alt="Runway" style="width:70%" class="w3-padding-16"></p>
+              <p><strong>Samus Aran</strong> La cazarrecompensas humana adoptada por la raza <i>Chozo</i></p>
+              <p>Samus Aran es una niña humana, su infancia se desarrllo en el planeta K-2L. Los piratas espaciales lo invadieron y mataron a muchas personas.</p>
+              <p>El lider delos Piratas <strong>Ridley</strong>, asesinó a la mayor parte de los habitantes, incluyendo a los padres de Samus, luego destruyeron el planeta.</p>
+              <p>La raza alienígena con apariencia de pájaro, <strong>Chozo</strong> encontró a Samus. Se la llevaron a su planeta natal: <strong>Zebes</strong>.</p>
+              <p>Los Chozo dotaron a Samus con parte de su ADN y le dieron un traje especial, un exoesqueleto mecánico, que además se conecta con su cuerpo y su mente: el <i>Power Suit</i>.</p>
+              <p>Ella crece y se una a la policia de la Federación Galáctica, para mantener la paz en la Federación y proteger la galaxia.</p>
+              <p>Luego de un tiempo abandona la policia pero sigue enfrentando a los Piratas por su propia cuenta.</p>
+              <p class="w3-center"><button class="w3-button w3-green w3-border-black" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like!</b></button></p>
+              <p class="w3-left"><button class="w3-button w3-blue w3-border-black" onclick="myFunction('demo3')"><b>Comentarios  </b> <span class="w3-tag w3-white">6</span></button></p>
+              <p class="w3-clear"></p>
+              
+              <!-- Example of comment field -->
+              <div id="demo3" style="display:none">
+              <hr>
+                <div class="w3-row w3-margin">
+                  <div class="w3-col l2 m3">
+                    <img src="img/COMyoshi01.png" style="width:60px;">
+                  </div>
+                  <div class="w3-col l10 m9">
+                    <h4>Yoshi <span class="w3-opacity w3-medium">September 26, 2022, 13:50</span></h4>
+                    <p>Samus es una debilicuha, que se enfrente a un guerrero poderoso como yo</p>
+                  </div>
+                </div>
+                <div class="w3-row w3-margin">
+                  <div class="w3-col l2 m3">
+                    <img src="img/COMdkk01.png" style="width:60px;">
+                  </div>
+                  <div class="w3-col l10 m9">
+                    <h4>Don King Kong <span class="w3-opacity w3-medium">September 26, 2022, 13:58</span></h4>
+                    <p>Deja tranquila a Samus, es la guerrera más fuerte de la galaxia</p>
+                  </div>
+                </div>
+                <div class="w3-row w3-margin">
+                  <div class="w3-col l2 m3">
+                    <img src="img/COMluigi01.png" style="width:60px;">
+                  </div>
+                  <div class="w3-col l10 m9">
+                    <h4>Luigi <span class="w3-opacity w3-medium">September 26, 2022, 14:00</span></h4>
+                    <p>¡Callate Yoshi! tu apenas eres el medio de transporte de mi hermano</p>
+                  </div>
+                </div>
+                <div class="w3-row w3-margin">
+                  <div class="w3-col l2 m3">
+                    <img src="img/COMyoshi01.png" style="width:60px;">
+                  </div>
+                  <div class="w3-col l10 m9">
+                    <h4>Yoshi <span class="w3-opacity w3-medium">September 26, 2022, 14:15</span></h4>
+                    <p>¡No lo soy!</p>
+                  </div>
+                </div>
+                <div class="w3-row w3-margin">
+                  <div class="w3-col l2 m3">
+                    <img src="img/COMluigi01.png" style="width:60px;">
+                  </div>
+                  <div class="w3-col l10 m9">
+                    <h4>Luigi <span class="w3-opacity w3-medium">September 26, 2022, 14:18</span></h4>
+                    <p>Si lo eres. Ve a descansar en tu corral caballito. Jajaja</p>
+                  </div>
+                </div>
+                <div class="w3-row w3-margin">
+                  <div class="w3-col l2 m3">
+                    <img src="img/COMdkk01.png" style="width:60px;">
+                  </div>
+                  <div class="w3-col l10 m9">
+                    <h4>Don King Kong <span class="w3-opacity w3-medium">September 26, 2022, 14:25</span></h4>
+                    <p>Jajajaja</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Blog entry -->
+          <div class="w3-container w3-pale-blue w3-margin w3-padding-large">
+            <div class="w3-center">
+              <h3>Metroids</h3>
+              <h5>Una especie con sorprendentes habilidades<span class="w3-opacity"></span></h5>
+            </div>
+
+            <div class="w3-justify">
+              <p style="text-align: center;"><img src="img/metroids01.png" alt="Runway" style="width:40%" class="w3-padding-16"></p>
+              <p>Los <strong>Metroids</strong> son organismos nativos del planeta <i>SR388</i>. Son capaces de alimentarse de la energía vital de otros seres vivos.</p>
+              <p>El Metroide típico es un organismo con forma de una gran bolsa ventral transparente, similar a una medusa. Tiene varios órganos en su interior y cuatro colmillos en la parte inferior de su cuerpo.</p>
+              <p>Fueron diseñados por un grupo de seres Chozo para combatir un parásito, pero el experimento se salió de control y los dejaron en SR388.</p>
+              <p>Los Piratas Espaciales los descubren y los usan como arma biológica, clonándolos y modificándolos a su antojo con fines bélicos.</p>
+              <p>Son débiles a las bajas temperaturas, puesto que se congela su cuerpo, por eso son vulnerables a algunas armas de Samus Aran como el <i>Ice Beam</i>.</p>
+              <p class="w3-center"><button class="w3-button w3-green w3-border-black" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like!</b></button></p>
+              <p class="w3-left"><button class="w3-button w3-blue w3-border-black" onclick="myFunction('demo3')"><b>Comentarios  </b> <span class="w3-tag w3-white">0</span></button></p>
+              <p class="w3-clear"></p>
+              
+            </div>
+          </div> 
+          <hr>
+          <!-- Blog entry -->
+          <div class="w3-container w3-pale-blue w3-margin w3-padding-large">
+            <div class="w3-center">
+              <h3>Ridley</h3>
+              <h5>El líder de los piratas espaciales y Archienemigo de Samus<span class="w3-opacity"></span></h5>
+            </div>
+
+            <div class="w3-justify">
+              <p style="text-align: center;"><img src="img/ridley01.png" alt="Runway" style="width:50%" class="w3-padding-16"></p>
+              <p>El alienígena conocido como <strong>Ridley</strong> es el líder de los piratas espaciales, y es el asesino de los padres de Samus.</p>
+              <p>También es conocido como "<i>El astuto dios de la muerte</i>", es originario del planeta Zebes, tiene forma de Dragón espacial y es el único individuo de su especie.</p>
+              <p>A pesar de ser derrotado varias veces por Samus, siempre regresa, puesto que los piratas han utilizado su tecnología, para revivirlo o clonarlo.</p>
+              <p>Es el enemigo más fuerte que enfrenta Samus durante sus viajes a través de la galaxia protegiendo a los Metrodis y combatiendo a los piratas.</p>
+              <p class="w3-center"><button class="w3-button w3-green w3-border-black" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like!</b></button></p>
+              <p class="w3-left"><button class="w3-button w3-blue w3-border-black" onclick="myFunction('demo4')"><b>Comentarios  </b> <span class="w3-tag w3-white">1</span></button></p>
+              <p class="w3-clear"></p>
+
+              <!-- Example of comment field -->
+              <div id="demo4" style="display:none">
+                <hr>
+                  <div class="w3-row w3-margin">
+                    <div class="w3-col l2 m3">
+                      <img src="img/COMdragon01.jpg" style="width:60px;">
+                    </div>
+                    <div class="w3-col l10 m9">
+                      <h4>Dragon de Fuego <span class="w3-opacity w3-medium">September 26, 2022, 17:54</span></h4>
+                      <p>Soy el Dragon de fuego, y juro que te vengaré, en esta vida o en la próxima.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        <!-- END BLOG ENTRIES -->
         </div>
-      </div>
-      <hr>
 
+        <!-- About/Information menu -->
+        <div class="w3-col l4">
+          <!-- About Card -->
+          <div class="w3-light-grey w3-margin">
+            <p style="text-align: center;"><img src="img/LarvaMetroid.webp" alt="Larva metroid" style="width:80%" class="w3-grayscale"></p>
+            <div class="w3-container w3-cyan">
+              <h4>Larva Metroide</h4>
+              <p>Soy una hermosa larva Metroid</p>
+            </div>
+          </div>
+          <hr>
 
+          <!-- Posts -->
+          <div class="w3-white w3-margin">
+            <div class="w3-container w3-padding w3-cyan">
+              <h4>Post más relevantes</h4>
+            </div>
+            <ul class="w3-ul w3-hoverable w3-white">
+              <li class="w3-padding-16">
+                <img src="img/Kirby01.webp" alt="Kirby" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Kirby</span>
+                <br>
+                <span>El guerrero más fuerte del universo soy yo</span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="img/mario01.jpg" alt="Mario" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Mario</span>
+                <br>
+                <span>Tips para domar a su caballo Yoshi</span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="img/pacman01.png" alt="Pac Man" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Pac Man</span>
+                <br>
+                <span>Come sobrevivir durante todo un juego con solo 3 vidas</span>
+              </li>
+            </ul>
+          </div>
+          <hr>
 
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>Hijo de la gigante Angrboða y Loki</h3>
-          <h5>La gran serpiente de Midgard, <span class="w3-opacity">SsSsS</span></h5>
-        </div>
+          <!-- Tags -->
+          <div class="w3-white w3-margin">
+            <div class="w3-container w3-padding w3-cyan">
+              <h4>Tags</h4>
+            </div>
+            <div class="w3-container w3-white">
+              <p>
+                <span class="w3-tag w3-aqua w3-margin-bottom">Metroid</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Samus</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Tokio</span>
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Videojuego</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ridley</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Piratas Espaciales</span>
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Yoshi</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Chozo</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Zebes</span>
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">caballo</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Policia</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">nintendo</span>
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Mario</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Pac Man</span>
+              </p>
+            </div>
+          </div>
+          <hr>
 
-        <div class="w3-justify">
-          <img src="img/MLR_Ryusuke_Yamino.webp" alt="Runway" style="width:100%" class="w3-padding-16">
-          <p><strong>Ryusuke Yamino</strong> Una gran serpiente!</p>
-          <p>Yamino Ryusuke es un chico educado con gafas que se desempeña como ama de llaves, cocinero y asistente de Loki en la Agencia de Detectives Enjaku. Le gusta cocinar, limpiar y otras actividades domésticas. 
-            Se revela que en realidad es el hijo de Loki y su verdadero nombre es Jormungand, una serpiente.</p>
-          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
-          <p class="w3-clear"></p>
+          <!-- Inspiration -->
+          <div class="w3-white w3-margin">
+            <div class="w3-container w3-padding w3-cyan">
+              <h4>Galeria</h4>
+            </div>
+            <div class="w3-row-padding w3-light-grey">
+              <div class="w3-col s6">
+                <p style="text-align: center;"><img src="img/Etecoon_sm.webp" alt="Etecun" style="width:80%" class="w3-grayscale"></p>
+              </div>
+              <div class="w3-col s6">
+                <p style="text-align: center;"><img src="img/DachoraFusion.webp" alt="Dachora" style="width:80%" class="w3-grayscale"></p>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="w3-white w3-margin">
+            <div class="w3-container w3-padding w3-cyan">
+              <h4>Sígueme</h4>
+            </div>
+            <div class="w3-container w3-xlarge w3-padding">
+              <i class="fa fa-facebook-official w3-hover-blue"></i>
+              <i class="fa fa-instagram w3-hover-blue"></i>
+              <i class="fa fa-snapchat w3-hover-blue"></i>
+              <i class="fa fa-pinterest-p w3-hover-blue"></i>
+              <i class="fa fa-twitter w3-hover-blue"></i>
+              <i class="fa fa-linkedin w3-hover-blue"></i>
+            </div>
+          </div>
+          <hr>
           
-          <!-- Example of comment field -->
-          <div id="demo3" style="display:none">
-            <hr>
-            <div class="w3-row w3-margin-bottom">
-              <div class="w3-col l2 m3">
-                <img src="img/MLR_Heimdall.webp" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>Heimdall<span class="w3-opacity w3-medium">April 10, 2015, 7:22 PM</span></h4>
-                <p>Que aburrido eres Jormungand.</p>
-              </div>
+          <!-- Subscribe -->
+          <div class="w3-white w3-margin">
+            <div class="w3-container w3-padding w3-cyan">
+              <h4>SUSCRÍBETE</h4>
             </div>
-            <div class="w3-row w3-margin-bottom">
-              <div class="w3-col l2 m3">
-                <img src="img/MLR_Loki_adulto.webp" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>Loki <span class="w3-opacity w3-medium">April 8, 2015, 10:32 PM</span></h4>
-                <p>No seas odioso Heimdall deja en paz a mi hijo.</p>
-              </div>
-            </div>
-            <div class="w3-row w3-margin-bottom">
-              <div class="w3-col l2 m3">
-                <img src="img/MLR_Frey.webp" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>Frey <span class="w3-opacity w3-medium">April 7, 2015, 9:12 PM</span></h4>
-                <p>Padre tu favorito es Jormungand siempre lo defiendes!</p>
-              </div>
+            <div class="w3-container w3-light-grey">
+              <p>Ingresa tu correo, para enterarte de las últimas notificaciones y noticias del blog</p>
+              <p><input class="w3-input w3-border" type="text" placeholder="Deja tu e-mail" style="width:100%"></p>
+              <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-blue">SUSCRÍBETE</button></p>
             </div>
           </div>
+
+        <!-- END About/Intro Menu -->
         </div>
+
+      <!-- END GRID -->
       </div>
-      
-    <!-- END BLOG ENTRIES -->
+
+    <!-- Fin del contenido w3-content -->
     </div>
 
-    <!-- About/Information menu -->
-    <div class="w3-col l4">
-      <!-- About Card -->
-      <div class="w3-white w3-margin">
-        <img src="img/MLR_Fenrir.webp" alt="Jane" style="width:100%" class="w3-grayscale">
-        <div class="w3-container w3-black">
-          <h4>Fenrir</h4>
-          <p>Soy un gigantesco lobo monstruoso</p>
+    <!-- Subscribe Modal -->
+    <div id="subscribe" class="w3-modal w3-animate-opacity">
+      <div class="w3-modal-content" style="padding:32px">
+        <div class="w3-container w3-blue">
+          <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+          <h2 class="w3-wide">SUSCRÍBETE</h2>
+          <p>Únete a la lista de correos, para recibir las últimas notificaciones y actuazlizaciones del Blog</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+          <button type="button" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">ENVIAR</button>
         </div>
       </div>
-      <hr>
-
-      <!-- Posts -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Post mas gracioosos</h4>
-        </div>
-        <ul class="w3-ul w3-hoverable w3-white">
-          <li class="w3-padding-16">
-            <img src="img/MLR_Narugami.webp" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Narugami</span>
-            <br>
-            <span>Loki te crees muy valiente pero tu y yo sabemos lo lloron que eres</span>
-          </li>
-          <li class="w3-padding-16">
-            <img src="img/MLR_Hela.webp" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Hela</span>
-            <br>
-            <span>Los Dioses son deviles las Diosas son pro!</span>
-          </li>
-          <li class="w3-padding-16">
-            <img src="img/MLR_Fenrir.webp" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Fenrir</span>
-            <br>
-            <span>Por que nadie me cree que soy un Lobo feroz gigante AUIDA!</span>
-          </li>
-          <li class="w3-padding-16">
-            <img src="img/MLR_Frey.webp" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
-            <span class="w3-large">Frey</span>
-            <br>
-            <span>Lorem ipsum dipsum</span>
-          </li>
-        </ul>
-      </div>
-      <hr>
-
-     
-
-      <!-- Tags -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Tags</h4>
-        </div>
-        <div class="w3-container w3-white">
-          <p>
-            <span class="w3-tag w3-black w3-margin-bottom">Manga</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Loki</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Tokio</span>
-            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Anime</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Midgard</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Odin</span>
-            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Metodologia</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ragnarok</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Regresar</span>
-            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Misterio</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Paranormal</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Dizfras</span>
-            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Magia</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Muñecas que hablan</span>
-          </p>
-        </div>
-      </div>
-      <hr>
-
-      <!-- Inspiration -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Inspiration</h4>
-        </div>
-        <div class="w3-row-padding w3-white">
-          <div class="w3-col s6">
-            <p><img src="img/MLR_Ecchan.webp" alt="Jeans" style="width:100%"></p>
-            <p><img src="img/MLR_Hela.webp" alt="Jeans" style="width:100%"></p>
-          </div>
-          <div class="w3-col s6">
-            <p><img src="img/MLR_Misao_Daidouji.webp" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
-            <p><img src="img/MLR_Narugami.webp" alt="Jeans" style="width:100%"></p>
-         </div>
-        </div>
-      </div>
-      <hr>
-
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Follow Me</h4>
-        </div>
-        <div class="w3-container w3-xlarge w3-padding">
-          <i class="fa fa-facebook-official w3-hover-opacity"></i>
-          <i class="fa fa-instagram w3-hover-opacity"></i>
-          <i class="fa fa-snapchat w3-hover-opacity"></i>
-          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-          <i class="fa fa-twitter w3-hover-opacity"></i>
-          <i class="fa fa-linkedin w3-hover-opacity"></i>
-        </div>
-      </div>
-      <hr>
-      
-      <!-- Subscribe -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Subscribe</h4>
-        </div>
-        <div class="w3-container w3-white">
-          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
-        </div>
-      </div>
-
-    <!-- END About/Intro Menu -->
     </div>
 
-  <!-- END GRID -->
-  </div>
+    <!-- Footer -->
+    <footer class="w3-container " style="padding:32px">
+      <a href="#" class="w3-button w3-blue w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>Ir al inicio</a>
+    </footer>
 
-<!-- END w3-content -->
-</div>
+    <script>
+    // Toggle between hiding and showing blog replies/comments
+    document.getElementById("myBtn").click();
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
 
-<!-- Subscribe Modal -->
-<div id="subscribe" class="w3-modal w3-animate-opacity">
-  <div class="w3-modal-content" style="padding:32px">
-    <div class="w3-container w3-white">
-      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
-      <h2 class="w3-wide">SUBSCRIBE</h2>
-      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
-    </div>
-  </div>
-</div>
+    function likeFunction(x) {
+      x.style.fontWeight = "bold";
+      x.innerHTML = "✓ Liked";
+    }
+    </script>
 
-<!-- Footer -->
-<footer class="w3-container " style="padding:32px">
-  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-</footer>
-
-<script>
-// Toggle between hiding and showing blog replies/comments
-document.getElementById("myBtn").click();
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-function likeFunction(x) {
-  x.style.fontWeight = "bold";
-  x.innerHTML = "✓ Liked";
-}
-</script>
-
-</body>
+  </body>
 </html>
